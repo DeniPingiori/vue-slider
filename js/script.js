@@ -37,21 +37,21 @@ createApp({
     },
     methods:{
         prevImage() {
-            if(this.active_image = 0){ //se non è vera la condizione
-                active_image = this.slides.length - 1;
+            if(this.active_image = 0){ //quando è =0 deve assumere val ultimo indice array
+                this.active_image = this.slides.length - 1;
 
             }
             else{
-                active_image++; //incremento
+                this.active_image--; //decremento
             }
         },
         nextImage() {
-            if(this.active_image == this.slides.length - 1){ //se non è vera la condizione
-                active_image = 0;
+            if (this.active_image == this.slides.length - 1 ) { //se non è vera la condizione
+                this.active_image = 0;
 
             }
             else{
-                active_image++; //incremento
+                this.active_image++; //incremento
             }
         }
     }
