@@ -1,3 +1,10 @@
+
+const { createApp } = Vue;
+
+createApp({
+
+}).mount('#app');
+
 const slides = [
 {
     image: 'img/01.webp',
@@ -23,3 +30,4 @@ const slides = [
 ];
 
 console.log(slides);
+
