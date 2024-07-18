@@ -37,7 +37,7 @@ createApp({
     },
     methods:{
         prevImage() {
-            if(this.active_image = 0){ //quando è =0 deve assumere val ultimo indice array
+            if(this.active_image == 0){ //quando è =0 deve assumere val ultimo indice array
                 this.active_image = this.slides.length - 1;
 
             }
